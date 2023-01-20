@@ -28,17 +28,17 @@ The Telegram bot developed in this project is separated into two parts which are
 bot is built purposely to let users book the meeting room anytime and wherever
 they are. Besides, the admin can also manage the room and approve new admin by using this Telegram bot.
 
-For the user part, the user must login to the account first to start booking a room. If the user does not have n
+For the user part, the user must login to the account first to start booking a room. If the user does not have an
 account, the user can register an account through the bot. After login, the bot will show several options, such as "
 Update Personal Info", "Book a Room", "Update Booking", "Delete Booking" and "Apply School Admin". The user can choose
 the option they want by replying to the bot, and the bot will continue to let the user key in some details needed for
 the process.
 
 For the admin part, the admin must login first only to continue to access the admin menu. The bot will show several menu
-option such as "Register New Room", "Update Room Details", "3: Display Booking Users List" and "Display Admin
+option such as "Register New Room", "Update Room Details", "Display Booking Users List" and "Display Admin
 Application" after the admin successfully login. The admin can approve the school admin application and manage rooms by
 replying to the bot with some details needed through this bot. This bot can make the room booking process more
-effective.
+effective and convenience.
 
 ## Flow Diagram of the requirements
 

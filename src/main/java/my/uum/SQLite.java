@@ -12,7 +12,7 @@ public class SQLite {
      * This method is to connect the sqlite database
      **/
     public static Connection connect() {
-        String jdbc = "jdbc:sqlite:C:/Users/MAY NG/Downloads/database (1).db";
+        String jdbc = "jdbc:sqlite:C:\\Users\\Fanny\\IdeaProjects\\group-project-koko\\database\\database.db";
         Connection con = null;
 
         try {
@@ -118,7 +118,7 @@ public class SQLite {
      * This method is to update the status of a room
      **/
     public void updateroomstatus(String room_id) {
-        String sql = "Update tbl_availability SET available_status=null WHERE tbl_availability.available_room_id= '" + room_id+"'";
+        String sql = "Update tbl_availability SET available_status='null' WHERE tbl_availability.available_room_id= '" + room_id+"'";
         try {
             Connection con = SQLite.connect();
             PreparedStatement stmt;
@@ -541,7 +541,7 @@ public class SQLite {
      **/
     public String checkdate(String availableDate) {
         String message = "false";
-        String sql = "SELECT * FROM tbl_availability WHERE available_date= '" + availableDate + "'";
+        String sql = "SELECT * FROM tbl_availability WHERE available_date= '" + availableDate + "' AND tbl_availability.available_status = 'null'";
 
         try (Connection con = SQLite.connect();
              Statement stmt = con.createStatement();
@@ -631,7 +631,7 @@ public class SQLite {
      **/
     public void bookingStatusN(int avail_room_id) {
 
-        String sql = "UPDATE tbl_availability SET available_status = null WHERE tbl_availability.available_room_id = '" + avail_room_id + "'";
+        String sql = "UPDATE tbl_availability SET available_status = 'null' WHERE tbl_availability.available_room_id = '" + avail_room_id + "'";
         try {
             Connection con = SQLite.connect();
             PreparedStatement ps;

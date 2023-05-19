@@ -1199,4 +1199,16 @@ public class Bot extends TelegramLongPollingBot {
         // TODO
         return "5968085786:AAFbSugQxoLAvYnyvI5PL94VZt4AwwBWP-A";
     }
+
+//    @Override
+//    public String getBotUsername() {
+//        // TODO
+//        return "ASSIGN2278366BOT";
+//    }
+//
+//    @Override
+//    public String getBotToken() {
+//        // TODO
+//        return "5848383587:AAFVwMMOSLu7WpkhVI7MpkVuwtwEOKmDnq0";
+//    }
 }
